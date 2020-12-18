@@ -9,4 +9,7 @@ for (var i = 0; i < 6; i++) {
   }
 }
 
-document.getElementById('numeri-dispari').innerHTML = numeriDispari;
+// Per stampare l'array
+for (var i = 0; i < numeriDispari.length; i++) {
+  document.getElementById('numeri-dispari').innerHTML += numeriDispari[i] + ' ';
+}
