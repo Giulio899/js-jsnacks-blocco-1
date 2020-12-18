@@ -28,17 +28,3 @@ if (message) {
 } else {
   document.getElementById("risposta").innerHTML = "Non puoi partecipare";
 }
-
-
-
-
-
-
-
-
-
-// var i = 0;
-// while (nomeUtente != listaNomi[i]) {
-//   message = "Non puoi partecipare";
-//   i++;
-// }
