@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Somma di numeri in array</title>
+  <!-- CDN fontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <!-- Link Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <!-- link CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class = "container">
+    <!-- Inizio box -->
+    <div id="box1" class="show">
+      <h1>Somma di numeri</h1>
+      <p>Inserisci dei numeri. Ti fermeremo quando la somma dei numeri inseriti sarà <strong>uguale o superiore a 50</strong>.</p>
+      <!-- form -->
+      <div class="form">
+        <input type="number" id="numero-utente" placeholder="50" onfocus="this.placeholder = ''" onblur="this.placeholder = '50'">
+        <div id="pulsante">Inserisci</div>
+      </div>
+      <!-- /form -->
+      <!-- box con array e somma -->
+      <div class="array-box1">
+        <h2>Numeri inseriti</h2>
+        <span id="numero-input">Ancora nessun numero inserito.</span>
+      </div>
+    </div>
+    <!-- /box -->
+
+
+    <!-- box -->
+    <div id="box2" class="hide">
+      <h1>Somma superata!</h1>
+      <!-- box con array e somma -->
+      <div class="contenitore-flex">
+
+        <div class="box-stop">
+          <img src="img/stop.png" alt="Stop">
+        </div>
+
+        <i class="fas fa-redo" title="Azzera la somma e inserisci nuovi numeri" id="re-do"></i>
+        <div class="somma">
+          <span id="somma"></span>
+        </div>
+      </div>
+
+    </div>
+    <!-- /box -->
+
+
+  </div>
+
+
+  <script src="js/script.js" charset="utf-8"></script>
+
+</body>
+</html>

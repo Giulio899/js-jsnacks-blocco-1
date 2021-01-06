@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../img/numeri.jpg');
+  background-size: cover;
+  text-align: center;
+  font-family: 'Nova Flat', cursive;
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+.container, #container {
+  width: 60%;
+  margin: 10px auto;
+  background-color: rgba(255, 255, 255, 0.85);
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.6);
+  padding: 15px;
+}
+
+.container {
+  height: calc(54vh - 15px);
+}
+
+#container {
+  height: calc(46vh - 15px);
+}
+
+.row.difficolta {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.row.difficolta .opzione {
+  background-color: #34393f;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* RIMUOVERE FRECCE */
+.hideoverflow {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  margin-top: 20px;
+
+
+}
+.hideoverflow select {
+  padding: 4px;
+  margin: -5px -20px -5px -5px;
+}
+/*  */
+
+select {
+  height: 70px;
+  display: inline-block;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 5px;
+}
+
+
+select option {
+  display: inline-block;
+  width: 100px;
+  height: 100%;
+  float:left;
+  padding: 20px;
+  border-radius: 5px;
+  outline: none;
+  background-color: #34393f;
+  color: white;
+  font-family: 'Nova Flat', cursive;
+  font-size: 1.2em;
+
+}
+
+select option:nth-child(2) {
+  margin: 0 150px;
+}
+
+
+
+
+.row.numero-segreto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row.numero-segreto h2 {
+  margin-top: 20px;
+}
+
+.row.numero-segreto .box-numero-segreto {
+  height: 120px;
+  width: 120px;
+  background-color: #34393f;
+  color: white;
+  margin-top: 20px;
+  border-radius: 10px;
+  animation: gira 4s linear infinite;
+  -webkit-animation: gira 4s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* cursor: pointer; */
+}
+
+.row.numero-segreto .box-numero-segreto span {
+  font-size: 5em;
+  animation: nonGira 4s linear infinite;
+  -webkit-animation: nonGira 4s linear infinite;
+
+}
+
+@keyframes gira {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+
+  }
+}
+
+@keyframes nonGira {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(-360deg);
+
+  }
+}
+
+.container-gioca {
+  display: flex;
+  justify-content: center;
+}
+
+.box-gioca {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  width: 280px;
+}
+
+input.box-numero-utente {
+  display: inline-block;
+  height: 120px;
+  width: 120px;
+  background-color: #34393f;
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  outline: 0px;
+}
+
+
+
+/* RIMUOVERE FRECCE */
+/* Chrome, Safari, Edge, Opera */
+input.box-numero-utente::-webkit-outer-spin-button,
+input.box-numero-utente::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input.box-numero-utente[type=number] {
+  -moz-appearance: textfield;
+}
+
+.box-numero-utente:focus {
+  border: 2px solid #F1511D;
+}
+
+a#btn {
+  display: inline-block;
+  height: 120px;
+  width: 120px;
+  font-size: 2em;
+  background-color: #F1511D;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.esito {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.esito .attempt,
+.esito .tip {
+  flex-basis: 50%;
+}
+
+
+.hide {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}

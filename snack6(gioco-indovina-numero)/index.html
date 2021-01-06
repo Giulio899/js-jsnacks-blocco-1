@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap" rel="stylesheet">
+  <title>Gioco indovina il numero</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- PRIMA META PAGINA -->
+  <div class="container">
+    <!-- row 1 -->
+    <div class="row spiegazione">
+      <p>
+        Prova a indovinare il numero casuale generato dal computer. Hai a disposizione 4 tentativi, e ogni volta che sbagli ti daremo un piccolo suggerimento. Prova tutti e tre i livelli di complessità!
+      </p>
+    </div>
+    <!-- row 2 -->
+    <!-- <div class="row difficolta">
+      <div class="opzione" id='facile'>Facile</div>
+      <div class="opzione" id='normale'>Normale</div>
+      <div class="opzione" id='difficile'>Difficile</div>
+    </div> -->
+    <div class="hideoverflow">
+      <select class='divselect' size="3" id='difficolta'>
+        <option value="facile">Facile</option>
+        <option value="normale">Normale</option>
+        <option value="difficile">Difficile</option>
+      </select>
+    </div>
+    <!-- row 3 -->
+    <div class="row numero-segreto">
+      <h2>Numero segreto</h2>
+      <div class="box-numero-segreto"><span>?</span></div>
+    </div>
+
+  </div>
+
+  <!-- SECONDA META PAGINA -->
+  <div id="container" class="hide">
+      <h2>Inserisci un numero <span id="range-numeri"></span></h2>
+
+      <div class="container-gioca">
+        <div class="box-gioca">
+          <input type="number" class="box-numero-utente" placeholder="es. 1" id="numero">
+          <a id="btn"><span>Gioca</span></a>
+        </div>
+      </div>
+
+      <div class="esito">
+          <div class="attempt">
+            <h3>Tentativi rimasti</h3>
+            <p id='tentativi'>Hai 4 tentativi per indovinare.</p>
+          </div>
+          <div class="tip">
+            <h3>Suggerimento</h3>
+            <p id='suggerimento'>Se sbagli ti daremo un piccolo suggerimento.</p>
+          </div>
+      </div>
+
+
+  </div>
+
+
+  <script src="js/script.js" charset="utf-8"></script>
+</body>
+</html>

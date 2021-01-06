@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../img/cinquanta.png');
+  background-color: #000304;
+  background-size: 15%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+}
+
+.container {
+  height: 100vh;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container #box1,
+.container #box2 {
+  width: 50%;
+  height: 65vh;
+  padding: 20px 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.container #box1 p {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+.container .form {
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Per rimuovere frecce */
+input#numero-utente[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container .form input {
+  width: 180px;
+  height: 180px;
+  padding: 5px;
+  border-radius: 50%;
+  border: none;
+  border: 25px solid rgba(230, 12, 2, 1);
+  outline: none;
+  text-align: center;
+  font-size: 4.5em;
+  font-weight: 900;
+}
+
+.container .form #pulsante {
+  width: 200px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+  outline: none;
+  margin-left: 20px;
+  background-color: black;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+  transition: background-color .2s;
+}
+
+.container .form #pulsante:hover {
+  background-color: #E50C02;
+}
+
+.array-box1 {
+  margin-top: 25px;
+  /* text-align: center; */
+}
+
+.array-box1 span {
+  display: inline-block;
+  font-size: 1.2em;
+  margin-top: 5px;
+}
+
+/* secondo box */
+
+.contenitore-flex {
+  width: 100%;
+  height: calc(100% - 78px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fas {
+  font-size: 1.8em;
+  cursor: pointer;
+  animation: rotate 2s linear infinite;
+  position: relative;
+  top: 160px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateZ(0deg);
+  } to {
+    transform: rotateZ(360deg);
+  }
+}
+
+#box2 span {
+  font-size: 1.5em;
+  font-style: normal;
+}
+
+#box2 .somma span {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  line-height: 190px;
+  vertical-align: middle;
+  text-align: center;
+  border: 30px solid #d40000;
+  border-radius: 50%;
+  background-color: white;
+  font-weight: 700;
+  color: #d40000;
+  font-size: 8em;
+}
+
+#box2 .box-stop {
+  text-align: center;
+}
+
+#box2 .box-stop img {
+  height: 250px;
+}
+
+.show {
+  display: block;
+  transition: 1s display;
+}
+
+.hide, #box2.hide {
+  display: none;
+}

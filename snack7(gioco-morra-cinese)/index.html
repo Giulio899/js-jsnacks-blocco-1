@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gioco morra cinese</title>
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container-istruzioni">
+    <h1>Morra cinese</h1>
+    <h2>Regole</h2>
+    <p>
+      Vince chi totalizza per primo 4 punti. Le regole sono le seguenti:
+     </p>
+      <ul>
+        <li>Il sasso spezza le forbici (vince il sasso).</li>
+        <li>Le forbici tagliano la carta (vincono le forbici).</li>
+        <li>La carta avvolge il sasso (vince la carta).</li>
+      </ul>
+
+    <div class="scelta-utente">
+
+      <!-- box-left carta -->
+      <div class="box">
+        <img src="img/carta.png" alt="Carta">
+        <div class="overlay" id="btn-carta">
+          <div class="text">Carta</div>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="img/forbice.png" alt="Forbice">
+        <div class="overlay" id="btn-forbice">
+          <div class="text">Forbice</div>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="img/sasso.png" alt="Sasso">
+        <div class="overlay" id="btn-sasso">
+          <div class="text">Sasso</div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div id="container-risultato" class="hide">
+
+    <div class="row">
+      <div class="box-container">
+        <h3>Computer</h3>
+        <div class="box">
+          <span id="scelta-pc"></span>
+        </div>
+        <div class="box">
+          <span id="punteggio-pc">0</span>
+        </div>
+      </div>
+      <div class="box-container">
+        <div class="box-tondo">
+          <span id="risultato">Esito</span>
+        </div>
+      </div>
+      <div class="box-container">
+        <h3>Giocatore</h3>
+        <div class="box">
+          <span id="scelta-giocatore"></span>
+        </div>
+        <div class="box">
+          <span id="punteggio-giocatore">0</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JS -->
+  <script src="js/script.js" charset="utf-8"></script>
+</body>
+</html>

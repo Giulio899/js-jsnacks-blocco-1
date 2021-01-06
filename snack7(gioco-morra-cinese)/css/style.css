@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #c8c8c8;
+}
+
+.container-istruzioni {
+  width: 850px;
+  height: 52vh;
+  margin: 10px auto;
+  padding: 20px 60px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.scelta-utente {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.scelta-utente .box {
+  width: 150px;
+  height: 150px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  transition: background .3s;
+  position: relative;
+  cursor: pointer;
+}
+/* .scelta-utente button {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 5px;
+  border: 0px;
+} */
+
+.scelta-utente img {
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.85);
+  opacity: 0;
+  transition: opacity .5s ease;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity .5s ease;
+  color: black;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.scelta-utente .box:hover .overlay,
+.scelta-utente .box:hover .text {
+  opacity: 1;
+}
+
+#container-risultato {
+  width: 850px;
+  height: calc(48vh - 30px);
+  margin: 10px auto;
+  padding: 20px 60px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+#container-risultato .row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#container-risultato h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#container-risultato .box,
+#container-risultato .box-tondo {
+  width: 100px;
+  height: 100px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#container-risultato .box-tondo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border-top: 1px solid rgba(255, 115, 0, 0.5);
+  border-left: 1px solid rgba(255, 115, 0, 0.5);
+  box-shadow: 3px 3px 3px rgba(255, 115, 0, 0.5);
+  /* position: relative; */
+
+
+}
+
+#container-risultato .box-tondo span {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-25%, -50%); */
+  font-size: 2.2em;
+  color: #FF7300;
+  text-shadow: 2px 2px 5px rgba(255, 115, 0, 0.5);
+  /* width: 200px; */
+}
+
+#scelta-pc, #scelta-giocatore {
+  font-size: 1.5em;
+}
+
+#punteggio-pc, #punteggio-giocatore {
+  font-size: 2.2em;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.snow {
+  opacity: 1;
+}
